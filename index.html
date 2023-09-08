@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage One Task</title>
+    <link rel="stylesheet" href="stageonetask.css">
+</head>
+<body>
+<div class="container">
+    <div class="name">
+        <img class="firstImage" src="/images/passport.png" alt="Naomi Omadi" data-testid="slackDisplayImage">
+        <h1 data-testid="slackUserName">Naomi Omadi</h1>
+    </div>
+    <div class="date">
+        <p class="day" data-testid="currentDayOfTheWeek">Day of The Week: Saturday</p>
+        <p>UTC Time (ms):</p><p id="UTCtime" data-testid="currentUTCTime"></p>
+    </div>
+    <div class="track">
+        <p data-testid="myTrack">Track: Frontend Development</p>
+    </div>
+    <div class="repository">
+        <a data-testid="githubURL" href="https://github.com/Jewel-Naomi/first_stage_project.git" target="_blank"><img class="secondImage" src="/images/github-mark/github-mark/github-mark.png" alt="GitHub icon">MyRepository</a>
+    </div>
+</div>
+
+    <script>
+        let ms = Date.UTC(2023, 09, 09);
+        document.getElementById("UTCtime").innerHTML = ms;
+        </script>
+</body>
+</html>
